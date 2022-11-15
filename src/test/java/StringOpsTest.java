@@ -39,7 +39,7 @@ class StringOpsTest {
 	@Test
 	void Should_ReturnTrueWhenremovedallspaces() {
 		String expects = "Sophia";
-		String received = StringOps.hello("  Sophia   ");
+		String received = StringOps.trimAll("  Sophia   ");
 		assertEquals(expects, received);
 	}
 
@@ -47,7 +47,7 @@ class StringOpsTest {
 	@Test
 	void Should_ReturnFalseWhenremovedsomespaces() {
 		String expects = "Kenji";
-		String received = StringOps.hello("  Ken ji  ");
+		String received = StringOps.trimAll("  Ken ji  ");
 		assertEquals(expects, received);
 	}
 
